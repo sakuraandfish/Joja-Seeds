@@ -1,0 +1,236 @@
+{
+
+"Format": "1.19.0",
+
+"Changes": [
+
+	   {
+          "Action": "EditImage",
+          "Target": "Maps/spring_town",
+          "FromFile": "assets/growthemyourlove.png",
+		  "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 48 },
+		  "ToArea": { "X": 256, "Y": 912, "Width": 64, "Height": 48 },
+		  "PatchMode": "Overlay",
+       },
+	   
+	   {
+          "Action": "EditImage",
+          "Target": "Maps/summer_town",
+          "FromFile": "assets/fuelyourlife.png",
+		  "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 48 },
+		  "ToArea": { "X": 256, "Y": 912, "Width": 64, "Height": 48 },
+		  "PatchMode": "Overlay",
+       },
+	   
+	   {
+          "Action": "EditImage",
+          "Target": "Maps/fall_town",
+          "FromFile": "assets/fuelyourlife.png",
+		  "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 48 },
+		  "ToArea": { "X": 256, "Y": 912, "Width": 64, "Height": 48 },
+		  "PatchMode": "Overlay",
+       },
+	   
+	   {
+          "Action": "EditImage",
+          "Target": "Maps/winter_town",
+          "FromFile": "assets/growthemyourlove.png",
+		  "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 48 },
+		  "ToArea": { "X": 256, "Y": 912, "Width": 64, "Height": 48 },
+		  "PatchMode": "Overlay",
+       },
+	   
+	   
+	   {
+	
+		"Action": "EditData",
+		"Target": "Data/Events/Farm",
+
+		"Entries": {
+			
+			"26435551/k 191393/u 5/z summer/z fall/z winter/x j_Seeds_Spring": "null",
+			"26435552/k 191393/u 27/z summer/z fall/z winter/x j_Seeds_Summer": "null",
+			"26435553/k 191393/u 27/z spring/z fall/z winter/x j_Seeds_Fall": "null",
+			"26435554/k 191393/u 27/z summer/z spring/z winter/x j_Seeds_Winter": "null",
+			
+		},
+				
+	},
+	
+	{
+	
+		"Action": "EditData",
+		"Target": "Data/Events/Farm",
+
+		"Entries": {
+			
+			"26435555/A j_spring_seedsCT/x p_Seeds_Letter": "null",
+		},
+		
+		"When": { "HasFlag |contains=j_Seeds_Spring, j_Seeds_Summer, j_Seeds_Fall": true, },
+				
+	},
+	  
+	   
+	{
+		"Action": "EditData",
+		"Target": "data/mail",
+		
+		"Entries": {
+		
+"j_Seeds_Spring": "致我们尊贵的 JojaMart 客户：^^JojaMart 自豪地宣布我们的新生物工程种子系列，非常适合刚起步的新农民和旨在最大化利润的经验丰富的农民。^^本季的特色作物: 西兰花！即使是最挑剔的食客也会喜欢的蔬菜。搭配奶酪是孩子们无法抗拒的一道菜！^^-莫里斯,^Joja 客户满意度代表%item conversationTopic j_spring_seedsCT 5 %%[#]春季JOJAZ种子",
+
+"j_Seeds_Summer": "致我们尊贵的 JojaMart 客户：^^夏天即将来临！不要忘记访问 JojaMart 以获取新鲜的生物工程种子选择。^^本季的特色作物：甜JOJA浆果！孩子们喜欢，他们会给任何人一点能量提升，让他们再次感觉 12 岁。^^-莫里斯，^Joja 客户满意度代表 [#]夏季JOJA种子",
+
+"j_Seeds_Fall": "致我们尊贵的 JojaMart 客户：^^随着季节的到来，记得把 JojaMart 的访问添加到你的 To-Dew 列表中！^^本季的特色作物：纪念罂粟！向退伍军人和他们的家人展示你照顾本地种植的红罂粟。^^-莫里斯,^Joja 客户满意度代表[#]夏季JOJA种子",
+
+"j_Seeds_Winter": "致我们尊贵的 JojaMart 客户：^^冬天是我们向我们所爱的人送礼的季节，JojaMart 随时为您提供帮助！用 JojaCo 种子为您的“好”名单上的每个人增添一些爱！^^本季的特色作物：冬星水果！没错，心爱的冬星现在有甜美的水果形式，只有吝啬鬼不会喜欢在树下收到一个。^^-莫里斯，^Joja 客户满意度代表[#]冬季JOJA种子",
+
+"p_Seeds_Letter": "亲爱的@，^^我有一个新的种子系列特别适合你！它们是传家宝品种，所以它们有多种颜色。是的，当然它们更有价值。只是一定要在皮埃尔家卖蔬菜！^^皮埃尔[#]传家宝种子",
+},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Pierre",
+        "Entries": {
+
+"j_spring_seedsCT": "你看到这张传单了吗，@？可耻的！$3#$b#'生物工程种子'！为什么不一边种植铀一边种植！$3#$b#我希望你知道皮埃尔的承诺 只为您的农场销售最好、最健康的种子。$1",
+
+"summer_Tue": "你的传家宝庄稼长得怎么样了，@？#$b#刘易斯市长昨天就在这里，对紫薯的想法感到惊讶。$1",
+
+"fall_Wed": "Morris 在这里告诉人们只有 Joja 南瓜才好吃。$3#$b#谁想吃南瓜？！$3#$b#我的种子长出了完美的南瓜灯，这样就足够了 .",
+
+"winter_Mon": "冬天你不能种庄稼......所以我没有种子给你。#$e#这真的会削减我们的利润。#$e#Joja 甚至做了什么 每年这个时候种土豆？$4",
+
+"winter_Tue": "首先是罂粟花，现在是冬星水果？$3#$b#Joja 会不择手段地调动人们的情绪。$3",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Vincent",
+
+		"Entries": {
+		
+				"Tue2": "妈妈今晚做西兰花！$1#$b#这是绿色的，佩妮小姐说颜色“不自然”。#$b#我喜欢加奶酪。$1",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Clint",
+
+		"Entries": {
+		
+				"fall_Sat": "你的煤炭供应怎么样，@？#$b#我一直在考虑在窑中尝试 Joja 玉米。 传单上说煤也一样好。#$b#当然，我需要先检查一下。",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Demetrius",
+
+		"Entries": {
+		
+				"summer_Wed": "你种过乔亚的新作物吗，@？#$b#我很好奇他们是如何设法延长生长季节的。 也许他们操纵了核糖体...#$b#我很乐意看看你带给我的任何样本。$1",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Jodi",
+
+		"Entries": {
+		
+				"fall_Tue": "$d kent# 今年我在 JojaMart 买了一整束红色罂粟花。 这实际上对肯特来说比对我更重要。|我在 JojaMart 买了一棵红罂粟。$2#$b#记住我们的退伍军人很好，但我宁愿让我丈夫回家。$2",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Kent",
+
+		"Entries": {
+		
+				"fall_Fri": "我记得当我嘲笑罂粟花时。 说他们没有任何意义。#$b#现在他们让我想起了我失去的朋友。 这是一种苦乐参半的感觉。",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/George",
+
+		"Entries": {
+		
+				"spring_Tue": "哼哼。 医生说我需要健康饮食，但他没有吃过伊芙琳的蒜蓉土豆。#$b#不，我不在乎配料是什么。",
+		},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Jas",
+
+		"Entries": {
+		
+				"spring_Tue": "谢恩给了我一个甜美的 Joja 浆果！$1#$b#太甜了！$1#$b#他说这会让我更加幸运，但我只看到它让我的舌头变蓝了。$3",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Robin",
+
+		"Entries": {
+		
+				"summer_Thu5": "$d Joja#@,快，拿着这个！ 这是一张 JojaMart 宣传番茄水果的传单。 我不能让德米特里厄斯看到它...$6|我和皮埃尔谈过，现在当德米特里厄斯去杂货店购物时，他仔细检查了水果和蔬菜的清单。$1",
+		},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Evelyn",
+
+		"Entries": {
+		
+				"winter_Thu": "$d Joja#哦，天哪，你在 JojaMart 看到过冬星水果吗？ 乔治可能会对整个赛季说“哼哼”，但我认为他们很可爱。$1|社区中心得以恢复真是太好了，但我承认我很怀念每年这个时候看到 JojaMart 装点冬之星的情况。",
+		},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Lewis",
+
+		"Entries": {
+		
+				"summer_Tue": "连 Joja 都没有想出如何“生物工程”出美味的蓝莓！$1",
+		},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Leah",
+
+		"Entries": {
+		
+				"summer_Thu": "我很高兴皮埃尔现在正在储存传家宝种子。$1#$b#也许如果你卖得足够多，他会得到更多品种。",
+		},
+	},
+	
+	
+]
+}

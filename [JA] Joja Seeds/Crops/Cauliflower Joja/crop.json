@@ -1,0 +1,35 @@
+{
+    "Name": "Cauliflower (Joja)",
+    "Product": "Cauliflower (Joja)",
+    "SeedName": "Cauliflower (Joja) Seeds",
+	
+    "SeedDescription": "Plant in spring. Takes 10 days to mature thanks to JojaCo bioengineering!",
+	
+    "Type": "Vegetable",
+
+    "Seasons": ["spring",],
+    "Phases": [ 1, 2, 3, 3, 1 ],
+    "RegrowthPhase": -1,
+    "HarvestWithScythe": false,
+    "TrellisCrop": false,
+    "Colors": null,
+	
+    "Bonus": {
+        "MinimumPerHarvest": 1,
+        "MaximumPerHarvest": 1,
+        "MaxIncreasePerFarmLevel": 0,
+        "ExtraChance": 0.0,
+    },
+		
+	"SeedPurchaseFrom": "Joja",
+
+    "SeedPurchasePrice": 80,
+	"SeedSellPrice": 20,
+				"SeedNameLocalization" : {
+        "zh": "花椰菜（Joja）" 
+	},
+    "SeedDescriptionLocalization": {
+        "zh": "在春天种植。 得益于 JojaCo 生物工程技术，需要 10 天才能成熟！" 
+	}
+
+}

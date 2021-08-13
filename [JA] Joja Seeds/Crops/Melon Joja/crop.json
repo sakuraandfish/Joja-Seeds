@@ -1,0 +1,35 @@
+{
+    "Name": "Melon (Joja)",
+    "Product": "Melon (Joja)",
+    "SeedName": "Melon (Joja) Seeds",
+	
+    "SeedDescription": "Plant in summer. Takes 10 days to mature thanks to JojaCo bioengineering!",
+	
+    "Type": "Fruit",
+
+    "Seasons": ["summer",],
+    "Phases": [ 1, 2, 2, 3, 2 ],
+    "RegrowthPhase": -1,
+    "HarvestWithScythe": false,
+    "TrellisCrop": false,
+    "Colors": null,
+	
+    "Bonus": {
+        "MinimumPerHarvest": 1,
+        "MaximumPerHarvest": 1,
+        "MaxIncreasePerFarmLevel": 0,
+        "ExtraChance": 0.0,
+    },
+		
+	"SeedPurchaseFrom": "Joja",
+
+    "SeedPurchasePrice": 80,
+	"SeedSellPrice": 20,
+				"SeedNameLocalization" : {
+        "zh": "甜瓜（joja）" 
+	},
+    "SeedDescriptionLocalization": {
+        "zh": "夏季种植。 得益于 JojaCo 生物工程技术，需要 10 天才能成熟！" 
+	}
+
+}
